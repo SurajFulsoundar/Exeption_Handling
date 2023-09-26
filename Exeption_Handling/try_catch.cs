@@ -3,37 +3,32 @@ using System.Collections.Generic;
 using System.Linq;
 using System.Text;
 using System.Threading.Tasks;
-using System.Xml.Linq;
 
-namespace Exeption_Handling
+namespace ExceptionHandles
 {
     internal class try_catch
     {
-           //Accept a name from user & if name is empty or null then raise an exception ‘name is required’ (write all code in main method)
-
-           // (try & catch block must be in main method)
-
         static void Main(string[] args)
         {
+            Console.WriteLine("Enter the Name ");
             try
             {
-                string str = null;
-                if (string.IsNullOrEmpty(str))
+                string name = Console.ReadLine();
+                //string name = null;
+
+                if (string.IsNullOrEmpty(name))
                 {
-                    throw new Exception("name is required");
+                    throw new Exception("Name is required");
                 }
-                Console.WriteLine(str);
+                Console.WriteLine(name);
             }
             catch (Exception ex)
             {
                 Console.WriteLine(ex.Message);
-            }
 
-            finally
-            {
-                Console.WriteLine("Inside the finally block");
             }
+            finally { Console.WriteLine("Inside Finally block"); }
+
         }
-
     }
 }

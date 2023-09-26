@@ -33,7 +33,7 @@
     <WarningLevel>4</WarningLevel>
   </PropertyGroup>
   <PropertyGroup>
-    <StartupObject>Exeption_Handling.application_exeption.Program</StartupObject>
+    <StartupObject>ExceptionHandles.try_catch</StartupObject>
   </PropertyGroup>
   <ItemGroup>
     <Reference Include="System" />
@@ -47,6 +47,10 @@
   </ItemGroup>
   <ItemGroup>
     <Compile Include="application_exeption.cs" />
+    <Compile Include="NegativeException.cs" />
+    <Compile Include="MobileNoexception.cs" />
+    <Compile Include="BinaryExeption.cs" />
+    <Compile Include="DigitOrSymbolException .cs" />
     <Compile Include="Eh_2.cs" />
     <Compile Include="Program.cs" />
     <Compile Include="Properties\AssemblyInfo.cs" />
